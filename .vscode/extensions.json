@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker",
+        "ms-python.black-formatter",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+    ]
+}

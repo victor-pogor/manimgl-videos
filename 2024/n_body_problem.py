@@ -1,10 +1,10 @@
 from manimlib import *
+import numpy as np
+
+XYPoint = Tuple[float, float]
+
 
 class TwoBodyProblem(InteractiveScene):
     def construct(self):
-        # Add some simple geometry
-        circle = Circle(radius=1, color=BLUE)
-        square = Square(side_length=2, color=RED)
-        self.add(circle)
-        self.add(square)
-        self.embed()
+        # Constants
+        body1_position: XYPoint = (5.0, 10.0)
