@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "start",
+            "type": "shell",
+            "command": "echo Cleanup after debug session",
+            "problemMatcher": [
+                {
+                    "pattern": {
+                        "regexp": "."
+                    },
+                    "background": {
+                        "activeOnStart": true,
+                        "beginsPattern": "ManimGL v\\d+\\.\\d+\\.\\d+",
+                        "endsPattern": "."
+                    }
+                }
+            ],
+            "presentation": {
+                "close": true
+            }
+        },
+        {
+            "label": "stop",
+            "command": "echo ${input:terminate}",
+            "type": "shell",
+        }
+    ],
+    "inputs": [
+        {
+          "id": "terminate",
+          "type": "command",
+          "command": "workbench.action.tasks.terminate",
+          "args": "terminateAll"
+        }
+    ]
+}

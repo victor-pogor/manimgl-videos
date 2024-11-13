@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "TwoBodyProblem",
+        "command": "manimgl ${workspaceFolder}/2024/n_body_problem.py TwoBodyProblem",
+        "type": "node-terminal",
+        "request": "launch",
+        "preLaunchTask": "start",
+        "postDebugTask": "stop"
+      }
+    ]
+  }
